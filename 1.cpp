@@ -17,6 +17,6 @@ int main(){
 
 /*
 rodar o codigo:
-g++ 1.cpp -o programa
-./programa
+g++ 1.cpp 
+./a.out
 */

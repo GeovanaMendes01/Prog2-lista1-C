@@ -1,12 +1,27 @@
 #include <stdio.h>
 
 int main(){
-    double num1, num2;
+    int dividendo, divisor;
+    int quociente = 0;
+    int resto;
 
     printf("Digite dois números: ");
-    scanf("%lf %lf", num1, num2);
+    scanf("%d %d", &dividendo, &divisor);
 
-    while(num1/num2>0){
-        
+    if (divisor == 0){
+        printf("Erro: divisão por zero!\n");
+        return 1;
     }
+
+    resto = dividendo;
+
+    while(resto >= divisor){
+        resto = resto-divisor;
+        quociente++;
+    }
+    
+    printf("Quociente = %d, Resto = %d\n", quociente, resto);
+
+    return 0;
+
 }
